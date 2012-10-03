@@ -54,7 +54,7 @@ module Cache
 
     private
     def keyspace
-      "near-app-cache"
+      self.class::KEYSPACE
     end
 
     def cache_key(key)
