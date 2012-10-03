@@ -52,9 +52,13 @@ module Cache
       self.write(self::KEY[sym], data)
     end
 
+    def cachekey_name(str)
+      @keyspace = str
+    end
+
     private
     def keyspace
-      self.class::KEYSPACE
+      @keyspace ||= "near-app-key"
     end
 
     def cache_key(key)
