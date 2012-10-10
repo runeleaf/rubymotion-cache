@@ -1,5 +1,5 @@
 Gem::Specification.new do |gem|
-  gem.name = 'motion-cache'
+  gem.name = 'rubymotion-cache'
   gem.version = '0.1'
 
   gem.authors = ['runeleaf']
